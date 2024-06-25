@@ -4,11 +4,14 @@ import com.deviro.maven.services.BluePrinter;
 import com.deviro.maven.services.ColourPrinter;
 import com.deviro.maven.services.GreenPrinter;
 import com.deviro.maven.services.RedPrinter;
+import org.springframework.stereotype.Component;
 
 /**
  * @author Sam
  * @create 2024-06-25 7:30 PM
  */
+
+@Component
 public class ColourPrinterImpl implements ColourPrinter {
   private RedPrinter redPrinter;
   private BluePrinter bluePrinter;
